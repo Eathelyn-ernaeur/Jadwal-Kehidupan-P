@@ -1,0 +1,170 @@
+<html>
+  <head>
+    <title>Formulir Pendaftaran</title>
+  </head>
+  <body>
+    <h1>Formulir Pendaftaran OSN Sosiologi</h1>
+
+    <!-- Biodata Diri -->
+    <fieldset>
+      <legend><strong>Biodata Diri</strong></legend>
+      <p>Masukkan data di bawah ini dengan benar</p>
+
+      <label for="nama-depan">Nama Depan:</label>
+      <input
+        type="text"
+        id="nama-depan"
+        name="nama-depan"
+        required
+      /><br /><br />
+
+      <label for="nama-belakang">Nama Belakang:</label>
+      <input
+        type="text"
+        id="nama-belakang"
+        name="nama-belakang"
+        required
+      /><br /><br />
+
+      <label>Jenis Kelamin:</label><br />
+      <input type="radio" id="laki-laki" name="gender" value="Laki-laki" />
+      <label for="laki-laki">Laki-laki</label>
+      <input type="radio" id="perempuan" name="gender" value="Perempuan" />
+      <label for="perempuan">Perempuan</label><br /><br />
+
+      <label for="tempat-lahir">Tempat Lahir:</label>
+      <input
+        type="text"
+        id="tempat-lahir"
+        name="tempat-lahir"
+        placeholder="Kota tempat lahir"
+        required
+      /><br /><br />
+
+      <label for="tanggal-lahir">Tanggal Lahir:</label>
+      <input
+        type="date"
+        id="tanggal-lahir"
+        name="tanggal-lahir"
+        required
+      /><br />
+    </fieldset>
+
+    <br />
+
+    <!-- Alamat Lengkap -->
+    <fieldset>
+      <legend><strong>Alamat Lengkap</strong></legend>
+
+      <label for="provinsi">Provinsi:</label>
+      <select id="provinsi" name="provinsi" required>
+        <option value="" disabled selected>-- Pilih Provinsi --</option>
+        <option>DKI Jakarta</option>
+        <option>Jawa Barat</option>
+        <option>Jawa Tengah</option>
+        <option>Jawa Timur</option>
+        <option>Banten</option>
+        <option>Bali</option>
+        <option>Sumatra Timur</option>
+        <option>Kalimantan</option></select
+      ><br /><br />
+
+      <label for="kota">Kota:</label>
+      <select id="kota" name="kota" required>
+        <option value="" disabled selected>-- Pilih Kota --</option>
+        <option>Tanggerang Selatan</option>
+        <option>Serang</option>
+        <option>Pandeglang</option></select
+      ><br /><br />
+
+      <label for="kecamatan">Kecamatan:</label>
+      <select id="kecamatan" name="kecamatan" required>
+        <option value="" disabled selected>-- Pilih Kecamatan --</option>
+        <option>Kebon Jeruk</option>
+        <option>Citra Raya</option>
+        <option>Grogol</option></select
+      ><br /><br />
+
+      <label for="kelurahan">Kelurahan:</label>
+      <select id="kelurahan" name="kelurahan" required>
+        <option value="" disabled selected>-- Pilih Kelurahan --</option>
+        <option>Kebon Jeruk</option>
+        <option>Banten</option>
+        <option>Citra Raya</option>
+        <option>Kuningan</option></select
+      ><br /><br />
+
+      <label for="desa">Desa:</label>
+      <select id="desa" name="desa" required>
+        <option value="" disabled selected>-- Pilih Desa --</option>
+        <option>Graha Rafflesia</option>
+        <option>Graha Sevilla</option>
+        <option>Graha Melia</option></select
+      ><br /><br />
+
+      <label for="alamat">Alamat:</label><br />
+      <textarea
+        id="alamat"
+        name="alamat"
+        rows="4"
+        cols="40"
+        placeholder="Masukkan alamat lengkap..."
+        required
+      ></textarea
+      ><br />
+    </fieldset>
+
+    <br />
+
+    <!-- Akun -->
+    <fieldset>
+      <legend><strong>Akun</strong></legend>
+
+      <label for="email">Email </label>
+      <input type="email" id="email" name="email" placeholder="Alamat email aktif" required><br><br>
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Maksimal 10 karakter" maxlength="10" required><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <label for="konfirmasi-password">Konfirmasi Password:</label>
+      <input type="password" id="konfirmasi-password" name="konfirmasi-password" placeholder="Masukkan kembali password" required><br>
+    </fieldset>
+
+    <br>
+
+      <label for="nomor-telepon">No.Tep </label>
+      <select id="negara" name="negara" required>
+        <option value="" disabled selected>No.</option>
+        <option>+62</option>
+        <option>+23</option>
+        <option>+63</option>
+        <option>+1</option>
+      </select>
+      <input
+        type="text"
+        id="nomor-telepon"
+        name="nomor-telepon"
+        required
+      /><br /><br />
+      </fieldset>
+
+    <!-- Syarat dan Ketentuan -->
+    <fieldset>
+         <legend><strong>Syarat dan Ketentuan</strong></legend>
+         <p>Dengan memilih "Setuju", Anda sudan mengikuti <a href="#">Syarat dan Ketentuan</a> yang berlaku.</p>
+
+         <input type="checkbox" id="setuju" name="setuju" required>
+         <label for="setuju">Setuju</label><br>
+    </fieldset>
+
+    <br>
+
+    <!-- Tombol Submit & Reset -->
+     <button type="submit">Daftar</button>
+     <button type="reset">Reset</button>
+
+  </body>
+</html>
